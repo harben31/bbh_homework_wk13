@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const productData = await Product.findByPk(req.params.id, {
-      include: [{model: Tag, through: ProductTag}]
+      include: [{model: Tag, through: ProductTag}, {model: Category}]
     });
     res.status(200).json(productData);
   } catch (err) {
@@ -63,6 +63,7 @@ router.post('/', (req, res) => {
     });
 });
 
+/*why promises no try catch? */
 // update product
 router.put('/:id', (req, res) => {
   // update product data
