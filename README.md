@@ -2,7 +2,7 @@
 Table of Contents:
 * [Contributors:](#Contributtors)
 * [Description](#Description)
-* [technologies_used](#Technologies_used)
+* [Technologies_used](#Technologies_used)
 * [Usage](#Usage)
 * [Questions](#Questions)
     
@@ -13,9 +13,10 @@ Benjamin Harris
 This app manages the relationship between the client and database of an online retailer. 
 
 ## Technologies_used
-*Node.js
-*Express.js
-*Sequelize.js
+* Node.js
+* Express.js
+* Sequelize.js
+* dotenv.js
 
 ## Usage:
 The user can interact in four ways with three tables. They GET, PUT, POST and DELETE from products, categories and tags. When a product is queried it returns the category and tags along with the product info. When the user quiries tags they will be returned the tags and their associated products. When the user queries categories they are returned category info along with products.  

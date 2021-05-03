@@ -65,7 +65,6 @@ router.post('/', (req, res) => {
 });
 
 
-/* created second instance of product when updated? */
 // update product
 router.put('/:id', (req, res) => {
   // update product data
